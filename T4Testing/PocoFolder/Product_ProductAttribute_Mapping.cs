@@ -1,0 +1,40 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace T4Testing
+{
+  /// <summary>
+  /// Represents a Product_ProductAttribute_Mapping.
+  /// NOTE: This class is generated from a T4 template - you should not modify it manually.
+  /// </summary>
+  public class Product_ProductAttribute_Mapping 
+  {
+      [Key]
+   public int Id { get; set; }
+
+   public int ProductId { get; set; }
+
+   public int ProductAttributeId { get; set; }
+
+   public string TextPrompt { get; set; }
+
+   public bool IsRequired { get; set; }
+
+   public int AttributeControlTypeId { get; set; }
+
+   public int DisplayOrder { get; set; }
+
+   public int? ValidationMinLength { get; set; }
+
+   public int? ValidationMaxLength { get; set; }
+
+   public string ValidationFileAllowedExtensions { get; set; }
+
+   public int? ValidationFileMaximumSize { get; set; }
+
+   public string DefaultValue { get; set; }
+
+   public string ConditionAttributeXml { get; set; }
+  }
+}
